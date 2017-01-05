@@ -8,6 +8,14 @@
             |
 
             <router-link :to="{ name: 'contact' }">Contact</router-link>
+
+            |
+
+            <router-link :to="{ name: 'user', params: { id: 1 } }">User ID 1</router-link>
+
+            |
+
+            <router-link :to="{ name: 'authorBook', params: { authorId: 1, bookId: 1 } }">Author ID 1 & Book ID 1</router-link>
         </p>
     </div>
 </template>
