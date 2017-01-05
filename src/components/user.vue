@@ -4,6 +4,18 @@
 
         <h3>User ID: {{ $route.params.id }}</h3>
 
+        <hr>
+
+        <router-link :to="{ name: 'profile' }">Profile</router-link>
+
+        |
+
+        <router-link :to="{ name: 'posts' }">Posts</router-link>
+
+        <router-view></router-view>
+
+        <hr>
+
         <p>
             <router-link to="/">Index</router-link>
 
